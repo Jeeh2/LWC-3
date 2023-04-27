@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Formulário">
+        <div class="form-1">
+    
+            <!--Campo Nome-->
+            <!--onchange captura informações que estão sendo inseridas no sistema-->
+            <lightning-input label="Primeiro Nome" type="text"    name="firstname" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Sobrenome"     type="text"    name="lastname" onchange={handleInputChange}></lightning-input>
+            <!--Campo Nome-->
+            <lightning-input label="Telefone"      type="phone"   name="phone" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="E-mail"        type="text"    name="email" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="WebSite"       type="text"    name="web" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Empresa"       type="text"    name="empresa" onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Receita Anual" type="number"  name="receita" onchange={handleInputChange}></lightning-input>
+    
+            <lightning-button variant="brand" label="Enviar" onchange={onSpread} ></lightning-button>
+            {result}<!--jeito de declarar um obj variável no html-->
+    
+        </div>
+    </lightning-card>
+</template>
