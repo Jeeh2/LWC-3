@@ -1,0 +1,16 @@
+<template>
+    <lightning-card class="aqui" title="Cálculo do IMC:">
+    <div class="slds-m-around_medium">  
+
+        <lightning-input label="Nome completo:" type="text" name="nome"></lightning-input>
+        <lightning-input label="Peso (Kg):" type="number" step=".01" name="peso" onchange={pegarValores2}></lightning-input>
+        <lightning-input label="Altura (M):" type="number" step=".01" name="alt" onchange={pegarValores3}></lightning-input>
+        <br/>
+    <div class="botao">
+        <lightning-button class="btn" variant="brand" label="Enviar!" onclick={Click}></lightning-button>
+    </div>
+        <br/>
+    <div class="result">
+        Resultado do IMC: {resultado}
+    </div>
+    </div>
